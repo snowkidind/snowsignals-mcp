@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.snowsignals/snowsignals",
+  "description": "Market-phase classifications over a metered API — phase events per currency and timeframe.",
+  "version": "1.0.0",
+  "websiteUrl": "https://snowsignals.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://snowsignals.io/mcp"
+    }
+  ]
+}
