@@ -1,5 +1,7 @@
 # SnowSignals MCP server
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/snowkidind/snowsignals-mcp)
+
 SnowSignals is a market-data service you reach over the [Model Context Protocol](https://modelcontextprotocol.io).
 Point an MCP client at one hosted endpoint and your agent can read where the market
 currently sits, then look up how that state has tended to play out.
