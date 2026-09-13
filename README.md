@@ -92,3 +92,10 @@ never cost anything.
 ## Support
 
 Questions or access requests: [@snowkidind](https://github.com/snowkidind).
+
+## License
+
+This repo — the connection docs and the `server.json` manifest — is under the
+[Apache License 2.0](LICENSE). The **SnowSignals** and **TrendVane** names and the brand
+assets in `media/` are trademarks of snowkidind and are not covered by that license (see
+[NOTICE](NOTICE)); linking to the service is always fine.
