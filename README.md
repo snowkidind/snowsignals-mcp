@@ -48,7 +48,7 @@ Most MCP clients take a remote server as a URL. In a client that reads a JSON co
 }
 ```
 
-Call `list_phase_meta` first. It's free, needs no login, and returns the enabled phases,
+Call `trendvane_list_phase_meta` first. It's free, needs no login, and returns the enabled phases,
 timeframes and currencies along with the pricing model, so your agent can work out what a
 paid call costs before making one.
 
@@ -60,28 +60,28 @@ a static token in the web dashboard for headless setups.
 
 Free, no account needed:
 
-- `list_phase_meta` — the phases, timeframes, currencies, and pricing. Start here.
-- `phase_resolution_stats` — the BTC-derived model of how each phase resolves. This is the
+- `trendvane_list_phase_meta` — the phases, timeframes, currencies, and pricing. Start here.
+- `trendvane_phase_resolution_stats` — the BTC-derived model of how each phase resolves. This is the
   interpretive layer for a live reading.
 
 Your own account, free but signed in:
 
-- `get_balance` — prepaid balance, what's on hold, and your deposit addresses.
-- `get_usage` — your metered-call history.
-- `get_notifications` — account, billing and support messages.
-- `deposit_poll` — nudge the wallet to look for a deposit you just sent.
+- `system_get_balance` — prepaid balance, what's on hold, and your deposit addresses.
+- `system_get_usage` — your metered-call history.
+- `system_get_notifications` — account, billing and support messages.
+- `system_deposit_poll` — nudge the wallet to look for a deposit you just sent.
 
 Metered, priced per call:
 
-- `get_phase` — the phase for one currency across one or all timeframes.
-- `compose_phases` — many currencies and timeframes in a single call, priced by how many
+- `trendvane_get_phase` — the phase for one currency across one or all timeframes.
+- `trendvane_compose_phases` — many currencies and timeframes in a single call, priced by how many
   readings come back.
 
 ## Pricing
 
 Prepaid and metered. You fund a balance in stablecoin, and each paid call draws down from
 it based on how many readings it returns. The exact base rate and multipliers come back
-from `list_phase_meta`, so the price is visible before you spend. The two discovery tools
+from `trendvane_list_phase_meta`, so the price is visible before you spend. The two discovery tools
 never cost anything.
 
 ## Manifest
